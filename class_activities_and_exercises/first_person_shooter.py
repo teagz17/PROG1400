@@ -65,4 +65,4 @@ if __name__ == "__main__":
     fps_game = FPSGame(player1,player2)
     
     #play a round
-    fps_game.play_round
+    fps_game.play_round()
