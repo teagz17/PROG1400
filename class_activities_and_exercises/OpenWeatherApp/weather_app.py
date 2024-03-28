@@ -6,6 +6,7 @@ class OpenMapAPI:
         self.api_key = api_key
         self.base_url = 'https://api.openweathermap.org/data/2.5/weather'
         self.message = ''
+        help = 'The OpenWeatherMap API can call by city name or city name, state code, and country'
 
     def get_weather_by_city(self, city_name):
         # https://api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
@@ -27,3 +28,4 @@ class OpenMapAPI:
         else:
             return None
         '''
+help(OpenMapAPI)
