@@ -22,6 +22,9 @@ class Driver(Person):
         self.v_model = v_model
         self.v_type = v_type
         self.v_colour = v_colour
+
+    def get_stops(self, route):
+        return super().get_stops(route)
     
     def make_trip(self, route):
         print(f'{self.first_name} {self.last_name} is driving a {self.v_colour} {self.v_make} {self.v_model} {self.v_type}, leaving {route[0]}, stopping at {route.get_stops()}, end arriving at {route[len(route) - 1]}.')
