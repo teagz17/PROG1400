@@ -10,6 +10,7 @@ multi-line comments
 # comments with tags
 # BUG, FIXME, TODO
 
+# help docstring
 help(str)
 '''
 output:
