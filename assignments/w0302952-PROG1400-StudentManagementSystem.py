@@ -17,7 +17,8 @@ class Student:
         return f'Student ID: {self.student_id}, Name: {self.name}, Age: {self.age}, Grade: {self.grade}'
 
     def update_grade(self):
-        pass
+        input('Please enter student ID: ')
+        
 
 class GraduateStudent(Student):
     def __init__(self, student_id, name, age, grade, thesis_topic):
@@ -29,10 +30,11 @@ class GraduateStudent(Student):
 
 class StudentManagementSystem():
     def __init__(self):
-        self.students = []
+        self.students = ['Teagan']
     
     def display_all_students():
-        pass
+        for n in self.students:
+            print(name)
 
     def search_student_by_id(self, student_id):
         print('Search student:')
